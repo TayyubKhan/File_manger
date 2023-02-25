@@ -40,10 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
              SizedBox(height: MediaQuery.of(context).size.height*0.09,),
             Column(
                children: [
-                Reuseabletext(name: 'Muneeba Shafiq', rollno: '28'),
-                 Reuseabletext(name: 'Anish Waseem', rollno: '29'),
-                 Reuseabletext(name: 'Hadia Tanveer', rollno: '31'),
-                 Reuseabletext(name: 'Zubia Israr', rollno: '38'),
+                Reuseabletext(name: 'Tayyub Khan'),
                ],
              )
           ],
@@ -55,8 +52,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
 class Reuseabletext extends StatelessWidget {
  final String name;
-final  String rollno;
-   Reuseabletext({Key? key,required this.name,required this.rollno}) : super(key: key);
+   Reuseabletext({Key? key,required this.name}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -65,8 +61,7 @@ final  String rollno;
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text('$name:',style:const TextStyle(color: textcollor)),
-          Text(rollno,style:const TextStyle(color: textcollor)),
+          Text('$name:',style:const TextStyle(color: textcollor))
         ],
       ),
     );
